@@ -134,6 +134,10 @@ p {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--color-logo-ligt);
+
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .menu-link:hover,
@@ -180,14 +184,19 @@ p {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
+
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .contact:hover,
 .contact:focus,
 .contact:active {
-  font-size: 16px;
+  /*   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
+ */
   color: var(--color-clic);
 }
 
@@ -291,12 +300,16 @@ p {
   line-height: 1.5;
 
   color: var(--color-wite);
+
+  transition-property: color, background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .main-btn:hover,
 .main-btn:focus {
-  background-color: var(--color-clic);
   color: var(--color-wite);
+  background-color: var(--color-clic);
 }
 
 /**
@@ -469,6 +482,10 @@ background-image: url(..//images/icon/symbol-defs.svg#icon-antenna);
   border-radius: 50%;
 
   background-color: var(--color-social-icon);
+
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .social-icon-link:hover,
@@ -525,18 +542,25 @@ background-image: url(..//images/icon/symbol-defs.svg#icon-antenna);
   display: flex;
   justify-content: center;
   align-items: center;
+
   width: 168px;
   height: 88px;
+
   border: 1px solid;
   border-color: var(--color-customers-icon);
   border-radius: 4px;
+
   color: var(--color-customers-icon);
+
+  transition-property: color, border-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .customers-link:hover,
 .customers-link:focus {
-  border-color: var(--color-social-icon-hover1);
   color: var(--color-social-icon-hover1);
+  border-color: var(--color-social-icon-hover1);
 }
 
 .customers-icon {
@@ -594,8 +618,13 @@ background-image: url(..//images/icon/symbol-defs.svg#icon-antenna);
   height: 40px;
   justify-content: center;
   align-items: center;
+
   background-color: var(--color-social-icon);
   border-radius: 50%;
+
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-icon-link:hover,
@@ -648,6 +677,10 @@ background-image: url(..//images/icon/symbol-defs.svg#icon-antenna);
   line-height: 1.5;
   letter-spacing: 0.04em;
   color: var(--color-btn-hero);
+
+  transition-property: color, background-color, border, box-shadow;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .nav-button:hover,
@@ -678,6 +711,10 @@ background-image: url(..//images/icon/symbol-defs.svg#icon-antenna);
 
 .portfolio-link {
   display: block;
+
+  transition-property: box-shadow;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .portfolio-link:hover,

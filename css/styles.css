@@ -21,6 +21,9 @@ body {
   --color-social-icon-hover2: #31d0aa;
   --color-customers-icon: #8e8f99;
   --color-madel: #fcfcfc;
+
+  /*   --header-idx: 10;
+  --modal-idx: 100; */
 }
 
 .list {
@@ -76,6 +79,8 @@ p {
   border-bottom: 1px solid var(--color-header-border);
   box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
+
+  /*  z-index: var(--header-idx); */
 }
 
 .header-nav {
@@ -723,13 +728,22 @@ background-image: url(..//images/icon/symbol-defs.svg#icon-antenna);
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
+/**
+  |============================
+  | PORTFOLIO-OVERLAY
+  |============================
+*/
+
 .portfolio-thumb {
   position: relative;
+  overflow: hidden;
 }
+
 .portfolio-overlay {
   position: absolute;
   top: 0;
   left: 0;
+  transform: translateY(100%);
 
   width: 100%;
   height: 100%;
@@ -744,6 +758,12 @@ background-image: url(..//images/icon/symbol-defs.svg#icon-antenna);
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--color-logo-dark);
+
+  transition: transform 0.3s cubic-bezier(0.2, 0, 0.2, 1);
+}
+
+.portfolio-link:hover .portfolio-overlay {
+  transform: translateY(0);
 }
 .portfolio-overlay-text {
 }
@@ -775,7 +795,7 @@ background-image: url(..//images/icon/symbol-defs.svg#icon-antenna);
   |============================
 */
 
-/* .overlay-modal {
+.overlay-modal {
   position: fixed;
   top: 0;
   left: 0;
@@ -784,11 +804,28 @@ background-image: url(..//images/icon/symbol-defs.svg#icon-antenna);
   height: 100%;
 
   background: rgba(46, 47, 66, 0.4);
+
+  opacity: 1;
+
+  transition: opacity, visibility;
+  transition-duration: 500ms;
 }
+
+.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.is-hidden .modal {
+  scale: 0.01;
+}
+
 .modal {
   position: absolute;
-  top: calc(50% - 292px);
-  left: calc(50% - 204px);
+  top: calc(50%);
+  left: calc(50%);
+  transform: translate(-50%, -50%);
 
   width: 408px;
   height: 584px;
@@ -797,6 +834,9 @@ background-image: url(..//images/icon/symbol-defs.svg#icon-antenna);
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
+
+  transition-property: scale, opacity;
+  transition-duration: 1000ms;
 }
 .modal-close-btn {
   position: absolute;
@@ -815,6 +855,6 @@ background-image: url(..//images/icon/symbol-defs.svg#icon-antenna);
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
 }
+
 .modal-close-icon {
 }
- */

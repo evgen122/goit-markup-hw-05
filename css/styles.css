@@ -720,8 +720,7 @@ p {
   transition: transform 0.3s cubic-bezier(0.2, 0, 0.2, 1);
 }
 
-.portfolio-link:hover .portfolio-overlay,
-portfolio-link:hover .portfolio-overlay-text {
+.portfolio-link:hover .portfolio-overlay {
   transform: translateY(0);
 }
 .portfolio-overlay-text {

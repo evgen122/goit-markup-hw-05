@@ -774,7 +774,8 @@ p {
 }
 
 .is-hidden .modal {
-  scale: 0.01;
+  /*   scale: 0.01;
+ */
 }
 
 .modal {
@@ -791,11 +792,11 @@ p {
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
 
-  transition-property: scale, opacity, transform;
+  /*   transition-property: scale, opacity, transform;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  /*   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
  */
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal-close-btn {
   position: absolute;

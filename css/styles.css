@@ -173,7 +173,7 @@ p {
 }
 
 .active::after {
-  background: var(--color-clic);
+  background-color: var(--color-clic);
 }
 
 .address {

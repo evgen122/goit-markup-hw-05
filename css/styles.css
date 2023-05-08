@@ -126,10 +126,12 @@ p {
 }
 
 .menu-item {
-  position: relative;
+  /* position: relative; */
 }
 
 .menu-link {
+  position: relative;
+
   display: block;
   padding-top: 24px;
   padding-bottom: 24px;
@@ -139,6 +141,7 @@ p {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--color-logo-ligt);
+  /*   color: var(--color-clic); */
 
   transition-property: color;
   transition-duration: 250ms;
@@ -156,13 +159,17 @@ p {
   display: block;
 
   position: absolute;
-  bottom: 0px;
-  /*   left: 0; */
+  bottom: -1px;
+  left: 0;
 
   width: 100%;
   height: 4px;
 
   border-radius: 2px;
+}
+
+.active {
+  color: var(--color-clic);
 }
 
 .active::after {

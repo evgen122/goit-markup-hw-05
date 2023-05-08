@@ -198,10 +198,6 @@ p {
 .contact:hover,
 .contact:focus,
 .contact:active {
-  /*   font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
- */
   color: var(--color-clic);
 }
 
@@ -356,35 +352,6 @@ p {
 .advantages-icon {
 }
 
-/* .list-about-item::before {
-  display: block;
-  content: '';
-  height: 112px;
-  background-repeat: no-repeat;
-  background-position: center;
-
-  background-color: var(--color-advand-card-background);
-  border-radius: 4px;
-} */
-
-/* .icon-strategy::before {
-  /*  background-image: url(../images/advant/antenna\ 1.svg); 
-background-image: url(..//images/icon/symbol-defs.svg#icon-antenna);
-}
-*/
-
-/* .icon-punctuality::before {
-  background-image: url(../images/advant/clock\ 1.svg);
-} */
-
-/* .icon-diligence::before {
-  background-image: url(../images/advant/diagram\ 1.svg);
-} */
-
-/* .icon-technologies::before {
-  background-image: url(../images/advant/astronaut\ 1.svg);
-} */
-
 /**
   |============================
   | SECTION_3_WE_DOING
@@ -453,19 +420,6 @@ background-image: url(..//images/icon/symbol-defs.svg#icon-antenna);
   text-align: center;
 }
 
-/* .card-block::after {
-  display: block;
-  content: '';
-  height: 40px;
-  background-color: rosybrown;
-  background-image: url(../images/icon-social/Ellipse.svg),
-    url(../images/icon-social/Ellipse-1.svg),
-    url(../images/icon-social/Ellipse-2.svg),
-    url(../images/icon-social/Ellipse-3.svg);
-  background-size: contain;
-  background-repeat: no-repeat;
-} */
-
 .card-block .text-margin {
   margin-bottom: 8px;
 }
@@ -498,21 +452,7 @@ background-image: url(..//images/icon/symbol-defs.svg#icon-antenna);
   background-color: var(--color-social-icon-hover1);
 }
 
-/* .social-icon-button {
-  width: 40px;
-  height: 40px;
-  border: none;
-  border-radius: 50%;
-  background-color: var(--color-social-icon);
-} */
-
-/* .social-icon-button:hover {
-  background-color: var(--color-social-icon-hover1);
-} */
-
 .social-icon {
-  /*   width: 16px;
-  height: 16px; */
   fill: var(--color-logo-dark);
 }
 
@@ -780,11 +720,6 @@ background-image: url(..//images/icon/symbol-defs.svg#icon-antenna);
   border-top: none;
 }
 
-/* .portfolio-card:hover {
-  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
-    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
-} */
-
 .title-card {
   margin-bottom: 8px;
 }
@@ -854,7 +789,20 @@ background-image: url(..//images/icon/symbol-defs.svg#icon-antenna);
   background: #e7e9fc;
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
+
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-close-btn:hover,
+.modal-close-btn:focus {
+  background-color: var(--color-social-icon-hover1);
+  fill: var(--color-wite);
 }
 
 .modal-close-icon {
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
